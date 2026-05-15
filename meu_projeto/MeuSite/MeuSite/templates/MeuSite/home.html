@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Inicial</title>
+    <style>
+        /* Reset básico de CSS para remover margens padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Classe de contêiner para centralizar o conteúdo */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Estilos do Cabeçalho */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1.5rem 0;
+            border-bottom: 3px solid #3498db;
+        }
+
+        header h1 {
+            float: left;
+            font-size: 1.8rem;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 5px;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Estilos da Área de Destaque (Hero) */
+        .hero {
+            background: #ecf0f1;
+            text-align: center;
+            padding: 5rem 1rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+
+        /* Estilos da Seção de Recursos (Features) */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            padding: 3rem 0;
+            gap: 20px;
+        }
+
+        .feature-box {
+            flex: 1;
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .feature-box h3 {
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        /* Estilos do Rodapé */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsividade básica para telas menores */
+        @media(max-width: 768px) {
+            header h1, header nav {
+                float: none;
+                text-align: center;
+            }
+            header nav {
+                margin-top: 15px;
+            }
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>MeuSite</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao Nosso Novo Site</h2>
+            <p>Criamos soluções digitais modernas e eficientes para impulsionar o seu projeto.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="features">
+            <div class="feature-box">
+                <h3>Design Moderno</h3>
+                <p>Criamos interfaces limpas e amigáveis para garantir a melhor experiência para os seus usuários.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Alta Performance</h3>
+                <p>Nosso código é otimizado para carregar rapidamente e funcionar perfeitamente em qualquer dispositivo.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Suporte Dedicado</h3>
+                <p>Estamos sempre à disposição para ajudar com atualizações e manutenção contínua.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MeuSite. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
